@@ -51,9 +51,13 @@
 Data structure problem solving 
   Assuming we have a large set of patients (500,000+) in a relational database, we want the user
   to type part of a patient name and the system returns a list of matched patients.
+  
   • What data structure and search/matching algorithm to use and why?
+  
   Using binary search algorithm to do while searching. it will divide the search interval in half. the idea is to use information that the array is sorted and reduce the time complexity
+  
   • How fast the search is using this algorithm and data structure?
+  
   it will divide the search interval in half. the idea is to use information that the array is sorted and reduce the time complexity
 
 >TASK #2: Design and coding
