@@ -99,11 +99,13 @@ let WeatherFunction = (() => {
                 $('#tbTime').val(entity.time);
                 $('#tbWind').val(entity.wind.speed + " - " + entity.wind.deg);
                 $('#tbVisibility').val(entity.visibility);
-                $('#tbSkyConditions').val(entity.visibility);
+                $('#tbSkyConditions').val('Dont know what should be mapped');
                 $('#tbVisibility').val(entity.visibility);
-                $('#tbTemperaturCelcius').val(entity.main.temp);
-                $('#tbTemperaturFahrenheit').val(entity.main.tempCelcius);
-                $('#tbVisibility').val(entity.visibility);
+                $('#tbTemperaturCelcius').val(entity.main.tempCelcius);
+                $('#tbTemperaturFahrenheit').val(entity.main.temp);
+                $('#tbRelativeHumidity').val(entity.main.humidity);
+                $('#tbPressure').val(entity.main.pressure);
+                $('#tbDewPoint').val('Invalid API key. Onecall is not available for free version. https://api.openweathermap.org/data/2.5/onecall');
             }
         }),
     }

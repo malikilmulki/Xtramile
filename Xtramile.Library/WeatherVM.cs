@@ -100,7 +100,7 @@ namespace Xtramile.Library
 
             get
             {
-                double Celsius = (Temp - 32) * 5 / 9;
+                _tempCelcius = (Temp - 32) * 5 / 9;
                 return _tempCelcius;
             }
             internal set

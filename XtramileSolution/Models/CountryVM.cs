@@ -11,24 +11,35 @@ namespace XtramileSolution.Models
         [JsonPropertyName("country_name")]
         public string CountryName { get; set; }
 
-        [JsonPropertyName("provinces")]
-        public List<StateVM>? States { get; set; }
+        [JsonIgnore]
+        public List<string>? States { get; set; }
     }
-    
-    public class StateVM
-    {
-        [JsonPropertyName("province_name")]
-        public string StateName { get; set; }
-
-        [JsonPropertyName("cities")]
-        public List<CityVM>? Cities { get; set; }
-
-    }
+   
 
     public class CityVM
     {
-        [JsonPropertyName("city_name")]
-        public string CityName { get; set; }
+        [JsonPropertyName("id")]
+        public double Id { get; set; }
 
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
+
+        [JsonPropertyName("state")]
+        public string State { get; set; }
+
+        [JsonPropertyName("country")]
+        public string CountryCode { get; set; }
+
+        [JsonPropertyName("coord")]
+        public CoordinateVM Coordinate { get; set; }
+
+    }
+
+    public class CoordinateVM
+    {
+        [JsonPropertyName("lon")]
+        public decimal? Longitude { get; set; } = null!;
+        [JsonPropertyName("lat")]
+        public decimal? Latitude { get; set; } = null!;
     }
 }

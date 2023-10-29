@@ -60,26 +60,32 @@ namespace XtramileSolution.Controllers
             }
         }
 
+        private List<CityVM> GetCities()
+        {
+            try
+            {
+                using (StreamReader r = new StreamReader("city.list.json"))
+                {
+                    string jsonString = r.ReadToEnd();
+                    return JsonSerializer.Deserialize<List<CityVM>>(jsonString);
+                }
+            }
+            catch (Exception ex) 
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> GetCity()
         {
             string countryCode = Request.Form["countryCode"].FirstOrDefault();
             string? search = Request.Form["term"].FirstOrDefault();
 
-            var countries = GetCountries();
-            var country = countries.SingleOrDefault(m => m.CountryCode == countryCode);
-            var data = new List<CityVM>();
-            if(country.States != null && country.States.Any())
-            {
-                foreach(var state in country.States)
-                {
-                    if(state.Cities != null && state.Cities.Any())
-                    {
-                        data.AddRange(state.Cities);
-                    }
-                }
-            }
-            var result = data.Select(x => new SelectListItem() { Value = Convert.ToString(x.CityName), Text = x.CityName }).ToList();
+            var cities = GetCities();
+            var data = cities.Where(m => m.CountryCode == countryCode);
+            
+            var result = data.Select(x => new SelectListItem() { Value = Convert.ToString(x.Name), Text = x.Name }).ToList();
             if (!string.IsNullOrEmpty(search))
             {
                 result = result.Where(x => x.Text.ToLowerInvariant().Contains(search)).ToList();
