@@ -23,7 +23,7 @@ namespace Xtramile.Library
 
             try
             {
-                var jsonString = await _client.GetStringAsync($"data/2.5/weather?q={city},{countryCode}&appid=48a07679a19acd346f11af2f79da87a8");
+                var jsonString = await _client.GetStringAsync($"data/2.5/weather?q={city.ToLowerInvariant()},{countryCode.ToLowerInvariant()}&appid=48a07679a19acd346f11af2f79da87a8");
 
                 var weather = JsonSerializer.Deserialize<WeatherVM>(jsonString);
 
