@@ -79,6 +79,9 @@ let WeatherFunction = (() => {
                 data: searchParameter,
                 contentType: false,
                 processData: false,
+                beforeSend: function (xhr) {
+                    LoadingScreenFunction.Show();
+                },
                 success: function (objRes) {
                     if (objRes.status === false) {
                         alert(objRes.message)
@@ -89,6 +92,9 @@ let WeatherFunction = (() => {
                 error: function (response) {
                     console.log(response);
                     alert('Error function please contact developer');
+                },
+                complete: function (data) {
+                    LoadingScreenFunction.Hide();
                 }
             });
         }),

@@ -12,10 +12,12 @@ namespace Xtramile.Library
 
         public WeatherService(HttpClient client)
         {
+            if(client.BaseAddress == null)
+                client.BaseAddress = new Uri("https://api.openweathermap.org");
             _client = client;
         }
 
-        public async Task<WeatherResponse?> GetUserAsync(string countryCode, string city)
+        public async Task<WeatherResponse?> GetWeatherAsync(string countryCode, string city)
         {
             var response = new WeatherResponse();
 

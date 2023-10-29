@@ -99,7 +99,7 @@ namespace XtramileSolution.Controllers
             string? countryCode = Request.Form["CountryCode"].FirstOrDefault();
             string? city = Request.Form["City"].FirstOrDefault();
 
-            var tempData = await _weatherService.GetUserAsync(countryCode, city);
+            var tempData = await _weatherService.GetWeatherAsync(countryCode, city);
             
             return new OkObjectResult(tempData);
         }
