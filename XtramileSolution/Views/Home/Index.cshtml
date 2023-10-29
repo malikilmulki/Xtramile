@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<style>
+    .select2-container .select2-selection--multiple .select2-selection__rendered {
+        display: block;
+        overflow: hidden;
+        padding-left: 8px;
+        text-overflow: ellipsis;
+    }
+</style>
+@section Scripts {
+    <script type="text/javascript">    
+        WeatherFunction.Init();
+    </script>    
+}
+<div class="row">
+        
+    <div class="col-md-12 order-md-1">
+        <h4 class="mb-4">TASK #2: Design and coding</h4>
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <label for="cbCountry">First name</label>
+                <select class="form-select" id="cbCountry" placeholder="Select Country">
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <label for="cbCity">First name</label>
+                <select class="form-select" id="cbCity" placeholder="Select City">
+                </select>
+            </div>
+        </div>
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" onclick="WeatherFunction.GetWeather();">Get Weather</button>
+        <hr class="mb-4">
+        
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="tbLocation">Location</label>
+            </div>
+            <div class="col-md-8 mb-3">
+                <input class="col-md-8 mb-3" type="text" id="tbLocation" readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="tbTime">Time</label>
+            </div>
+            <div class="col-md-8 mb-3">
+                <input type="text" id="tbTime" readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="tbWind">Wind</label>
+            </div>
+            <div class="col-md-8 mb-3">
+                <input class="col-md-8 mb-3" type="text" id="tbWind" readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="tbVisibility">Visibility</label>
+            </div>
+            <div class="col-md-8 mb-3">
+                <input class="col-md-8 mb-3" type="text" id="tbVisibility" readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="tbSkyConditions">Sky conditions</label>
+            </div>
+            <div class="col-md-8 mb-3">
+                <input class="col-md-8 mb-3" type="text" id="tbSkyConditions" readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="tbTemperaturCelcius">Temperature (in Celsius)</label>
+            </div>
+            <div class="col-md-8 mb-3">
+                <input class="col-md-8 mb-3" type="text" id="tbTemperaturCelcius" readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="tbTemperaturFahrenheit">Temperature (in Fahrenheit))</label>
+            </div>
+            <div class="col-md-8 mb-3">
+                <input class="col-md-8 mb-3" type="text" id="tbTemperaturFahrenheit" readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="tbLocation">Dew Point</label>
+            </div>
+            <div class="col-md-8 mb-3">
+                <input class="col-md-8 mb-3" type="text" id="tbDewPoint" readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="tbLocation">Relative Humidity</label>
+            </div>
+            <div class="col-md-8 mb-3">
+                <input class="col-md-8 mb-3" type="text" id="tbRelativeHumidity" readonly />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="tbLocation">Pressure</label>
+            </div>
+            <div class="col-md-8 mb-3">
+                <input class="col-md-8 mb-3" type="text" id="tbPressure" readonly />
+            </div>
+        </div>
+    </div>
+</div>
