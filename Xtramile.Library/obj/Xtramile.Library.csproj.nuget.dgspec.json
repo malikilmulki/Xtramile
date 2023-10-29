@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MSJARIF\\source\\repos\\XtramileSolution\\Xtramile.Library\\Xtramile.Library.csproj": {}
+    "C:\\Users\\MSJARIF\\Projects\\Xtramile\\Xtramile.Library\\Xtramile.Library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MSJARIF\\source\\repos\\XtramileSolution\\Xtramile.Library\\Xtramile.Library.csproj": {
+    "C:\\Users\\MSJARIF\\Projects\\Xtramile\\Xtramile.Library\\Xtramile.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MSJARIF\\source\\repos\\XtramileSolution\\Xtramile.Library\\Xtramile.Library.csproj",
+        "projectUniqueName": "C:\\Users\\MSJARIF\\Projects\\Xtramile\\Xtramile.Library\\Xtramile.Library.csproj",
         "projectName": "Xtramile.Library",
-        "projectPath": "C:\\Users\\MSJARIF\\source\\repos\\XtramileSolution\\Xtramile.Library\\Xtramile.Library.csproj",
+        "projectPath": "C:\\Users\\MSJARIF\\Projects\\Xtramile\\Xtramile.Library\\Xtramile.Library.csproj",
         "packagesPath": "C:\\Users\\MSJARIF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MSJARIF\\source\\repos\\XtramileSolution\\Xtramile.Library\\obj\\",
+        "outputPath": "C:\\Users\\MSJARIF\\Projects\\Xtramile\\Xtramile.Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -8,3 +8,13 @@ C:\Users\MSJARIF\source\repos\XtramileSolution\Xtramile.Library\obj\Debug\netcor
 C:\Users\MSJARIF\source\repos\XtramileSolution\Xtramile.Library\obj\Debug\netcoreapp3.1\Xtramile.Library.csproj.CoreCompileInputs.cache
 C:\Users\MSJARIF\source\repos\XtramileSolution\Xtramile.Library\obj\Debug\netcoreapp3.1\Xtramile.Library.dll
 C:\Users\MSJARIF\source\repos\XtramileSolution\Xtramile.Library\obj\Debug\netcoreapp3.1\Xtramile.Library.pdb
+C:\Users\MSJARIF\Projects\Xtramile\Xtramile.Library\bin\Debug\netcoreapp3.1\Xtramile.Library.deps.json
+C:\Users\MSJARIF\Projects\Xtramile\Xtramile.Library\bin\Debug\netcoreapp3.1\Xtramile.Library.dll
+C:\Users\MSJARIF\Projects\Xtramile\Xtramile.Library\bin\Debug\netcoreapp3.1\Xtramile.Library.pdb
+C:\Users\MSJARIF\Projects\Xtramile\Xtramile.Library\obj\Debug\netcoreapp3.1\Xtramile.Library.csproj.AssemblyReference.cache
+C:\Users\MSJARIF\Projects\Xtramile\Xtramile.Library\obj\Debug\netcoreapp3.1\Xtramile.Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSJARIF\Projects\Xtramile\Xtramile.Library\obj\Debug\netcoreapp3.1\Xtramile.Library.AssemblyInfoInputs.cache
+C:\Users\MSJARIF\Projects\Xtramile\Xtramile.Library\obj\Debug\netcoreapp3.1\Xtramile.Library.AssemblyInfo.cs
+C:\Users\MSJARIF\Projects\Xtramile\Xtramile.Library\obj\Debug\netcoreapp3.1\Xtramile.Library.csproj.CoreCompileInputs.cache
+C:\Users\MSJARIF\Projects\Xtramile\Xtramile.Library\obj\Debug\netcoreapp3.1\Xtramile.Library.dll
+C:\Users\MSJARIF\Projects\Xtramile\Xtramile.Library\obj\Debug\netcoreapp3.1\Xtramile.Library.pdb
